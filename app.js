@@ -7,6 +7,7 @@ const pdxAirport = {
     avg: 6.3,
     hourSales: [],
     hoursOfDay: ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'],
+    totalSales: 0,
     custPerHour: function(){
         return Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
     },
@@ -16,6 +17,7 @@ const pdxAirport = {
     cookiesEachHour: function(){    //avg cookies for each hour of workday - 15 total
         for (let i = 0; i < 15; i++){
             this.hourSales[i] = this.cookiesPerHour();
+            this.totalSales += this.hourSales[i];
         }
     },
     renderLocation: function(){
@@ -28,6 +30,10 @@ const pdxAirport = {
             console.log(li.textContent);
             list.appendChild(li);
         }
+        const total = document.getElementById(this.id);
+        const totalli = document.createElement('li');
+        totalli.textContent = `Total: ${this.totalSales}`;
+        total.appendChild(totalli);
     }
 };
 
@@ -38,6 +44,7 @@ const pioneerSquare = {
     avg: 1.2,
     hourSales: [],
     hoursOfDay: ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'],
+    totalSales: 0,
     custPerHour: function(){
         return Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
     },
@@ -47,6 +54,7 @@ const pioneerSquare = {
     cookiesEachHour: function(){    //avg cookies for each hour of workday - 15 total
         for (let i = 0; i < 15; i++){
             this.hourSales[i] = this.cookiesPerHour();
+            this.totalSales += this.hourSales[i];
         }
     },
     renderLocation: function(){
@@ -59,6 +67,10 @@ const pioneerSquare = {
             console.log(li.textContent);
             list.appendChild(li);
         }
+        const total = document.getElementById(this.id);
+        const totalli = document.createElement('li');
+        totalli.textContent = `Total: ${this.totalSales}`;
+        total.appendChild(totalli);
     }
 };
 
@@ -69,6 +81,7 @@ const powells = {
     avg: 3.7,
     hourSales: [],
     hoursOfDay: ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'],
+    totalSales: 0,
     custPerHour: function(){
         return Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
     },
@@ -78,6 +91,7 @@ const powells = {
     cookiesEachHour: function(){    //avg cookies for each hour of workday - 15 total
         for (let i = 0; i < 15; i++){
             this.hourSales[i] = this.cookiesPerHour();
+            this.totalSales += this.hourSales[i];
         }
     },
     renderLocation: function(){
@@ -90,6 +104,10 @@ const powells = {
             console.log(li.textContent);
             list.appendChild(li);
         }
+        const total = document.getElementById(this.id);
+        const totalli = document.createElement('li');
+        totalli.textContent = `Total: ${this.totalSales}`;
+        total.appendChild(totalli);
     }
 };
 
@@ -100,6 +118,7 @@ const stJohns = {
     avg: 2.3,
     hourSales: [],
     hoursOfDay: ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'],
+    totalSales: 0,
     custPerHour: function(){
         return Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
     },
@@ -109,6 +128,7 @@ const stJohns = {
     cookiesEachHour: function(){    //avg cookies for each hour of workday - 15 total
         for (let i = 0; i < 15; i++){
             this.hourSales[i] = this.cookiesPerHour();
+            this.totalSales += this.hourSales[i];
         }
     },
     renderLocation: function(){
@@ -121,6 +141,10 @@ const stJohns = {
             console.log(li.textContent);
             list.appendChild(li);
         }
+        const total = document.getElementById(this.id);
+        const totalli = document.createElement('li');
+        totalli.textContent = `Total: ${this.totalSales}`;
+        total.appendChild(totalli);
     }
 };
 
@@ -131,6 +155,7 @@ const waterfront = {
     avg: 4.6,
     hourSales: [],
     hoursOfDay: ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'],
+    totalSales: 0,
     custPerHour: function(){
         return Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
     },
@@ -140,6 +165,7 @@ const waterfront = {
     cookiesEachHour: function(){    //avg cookies for each hour of workday - 15 total
         for (let i = 0; i < 15; i++){
             this.hourSales[i] = this.cookiesPerHour();
+            this.totalSales += this.hourSales[i];
         }
     },
     renderLocation: function(){
@@ -152,6 +178,10 @@ const waterfront = {
             console.log(li.textContent);
             list.appendChild(li);
         }
+        const total = document.getElementById(this.id);
+        const totalli = document.createElement('li');
+        totalli.textContent = `Total: ${this.totalSales}`;
+        total.appendChild(totalli);
     }
 };
 
