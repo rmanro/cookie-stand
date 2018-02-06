@@ -69,15 +69,19 @@ const location1 = new Location('pdxairport', 23, 65, 6.3, 'PDX Airport');
 location1.renderLocation();
 location1.buildLocationRow();
 
-// const location2 = new Location('pioneersquare', 3, 24, 1.2, 'Pioneer Square');
-// location2.renderLocation();
+const location2 = new Location('pioneersquare', 3, 24, 1.2, 'Pioneer Square');
+location2.renderLocation();
+location2.buildLocationRow();
 
-// const location3 = new Location('powells', 11, 38, 3.7, 'Powell\'s');
-// location3.renderLocation();
+const location3 = new Location('powells', 11, 38, 3.7, 'Powell\'s');
+location3.renderLocation();
+location3.buildLocationRow();
 
-// const location4 = new Location('stjohns', 20, 38, 2.3, 'St John\'s');
-// location4.renderLocation();
+const location4 = new Location('stjohns', 20, 38, 2.3, 'St John\'s');
+location4.renderLocation();
+location4.buildLocationRow();
 
-// const location5 = new Location('waterfront', 2, 16, 4.6, 'Waterfront');
-// location5.renderLocation();
+const location5 = new Location('waterfront', 2, 16, 4.6, 'Waterfront');
+location5.renderLocation();
+location5.buildLocationRow();
 
