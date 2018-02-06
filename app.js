@@ -1,7 +1,7 @@
 'use strict';
 
 const hoursOfDay = ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'];
-
+let totalHourSales = [];
 
 function Location (id, min, max, avg, locationName){
     this.id = id;
@@ -47,6 +47,9 @@ const buildHourHeaders = function(){
         tr.appendChild(th);
     }
     theader.appendChild(tr);
+    const totalth = document.createElement('th');
+    totalth.textContent = 'Daily Location Total';
+    tr.appendChild(totalth);
 };
 
 Location.prototype.buildLocationRow = function(){
