@@ -8,11 +8,9 @@ const pdxAirport = {
     hourSales: [],
     hoursOfDay: ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'],
     totalSales: 0,
-    custPerHour: function(){
-        return Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
-    },
     cookiesPerHour: function(){
-        return Math.floor(this.avg * this.custPerHour()); //avg cookies per hour
+        const custPerHour = Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
+        return Math.floor(this.avg * custPerHour); //avg cookies per hour
     },
     cookiesEachHour: function(){    //avg cookies for each hour of workday - 15 total
         for (let i = 0; i < 15; i++){
