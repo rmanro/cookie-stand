@@ -8,16 +8,13 @@ const pdxAirport = {
     hourSales: [],
     hoursOfDay: ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'],
     totalSales: 0,
-    cookiesEachHour: function(){    //avg cookies for each hour of workday - 15 total
-        for (let i = 0; i < 15; i++){
-            const custPerHour = Math.floor(Math.random () * (this.max - this.min) + this.min); //random # of customers
-            const cookiesPerHour = Math.floor(this.avg * custPerHour); //avg cookies per hour
+    renderLocation: function(){
+        for (let i = 0; i < 15; i++){            //avg cookies for each hour of workday - 15 total
+            const custPerHour = Math.floor(Math.random () * (this.max - this.min) + this.min);    //random # of customers
+            const cookiesPerHour = Math.floor(this.avg * custPerHour);      //avg cookies per hour
             this.hourSales[i] = cookiesPerHour;
             this.totalSales += this.hourSales[i];
         }
-    },
-    renderLocation: function(){
-        this.cookiesEachHour();
         for (let i = 0; i < this.hoursOfDay.length; i++)
         {
             const list = document.getElementById(this.id);
@@ -180,7 +177,6 @@ const waterfront = {
         total.appendChild(totalli);
     }
 };
-
 
 pdxAirport.renderLocation();
 pioneerSquare.renderLocation();
