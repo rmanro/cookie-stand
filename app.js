@@ -38,6 +38,10 @@ const buildHourHeaders = function(){
     const theader = document.querySelector('#sales thead');
     const tr = document.createElement('tr');
     for (let i = 0; i < 15; i++){
+        if (i === 0){
+            const blankth = document.createElement('th');
+            tr.appendChild(blankth);
+        }
         const th = document.createElement('th');
         th.textContent = hoursOfDay[i];
         tr.appendChild(th);
