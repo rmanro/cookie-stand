@@ -64,6 +64,9 @@ Location.prototype.buildLocationRow = function(){
         tr.appendChild(td);
     }
     tbody.appendChild(tr);
+    const totaltd = document.createElement('td');
+    totaltd.textContent = this.totalSales;
+    tr.appendChild(totaltd);
 };
 
 buildHourHeaders();
