@@ -115,4 +115,5 @@ form.addEventListener('submit' , function() {
     newLocation.renderLocation();
     newFoot = true;
     buildFooter(newFoot);
+    form.reset();
 });
