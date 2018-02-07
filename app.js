@@ -26,8 +26,8 @@ Location.prototype.renderLocation = function(){
         const cookiesPerHour = Math.floor(this.avg * custPerHour);      //avg cookies per hour
         this.hourSales[i] = cookiesPerHour;
         this.totalSales += this.hourSales[i];
-        totalAllSales += this.totalSales;
     }
+    totalAllSales += this.totalSales;
 };
 
 Location.prototype.buildLocationRow = function(){   //builds rows for each location
