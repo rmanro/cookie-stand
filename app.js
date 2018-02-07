@@ -55,7 +55,7 @@ const buildHourHeaders = function(){  //builds hour headers for table
     for (let i = 0; i < 15; i++){
         if (i === 0){
             const blankth = document.createElement('th');
-            blankth.textContent = 'LOCATION';
+            blankth.textContent = 'Location';
             tr.appendChild(blankth);
         }
         const th = document.createElement('th');

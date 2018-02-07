@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(251, 244, 244)
+    font-family: 'Arimo', sans-serif;
+    background-color: #e5dada;
 }
 
 table {
@@ -29,15 +29,16 @@ tfoot {
 }
 
 thead {
-    background-color: rgb(195, 144, 190)
+    background-color: rgb(195, 144, 190);
 }
 
 fieldset {
-    width: 650px;
+    width: fit-content;
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
     background-color: white;
+    font-weight: bold;
 }
 
 legend {
@@ -45,6 +46,7 @@ legend {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    text-align: right;
 }
 
 input {
@@ -57,10 +59,23 @@ input {
 
 #add {
     background-color: cornflowerblue;
-    font-weight: bold;
-    border-width: 2px;
+    border-width: 1px;
+    font-size: 105%;
 }
 
 #add:hover {
     background-color: rgb(195, 144, 190);
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+#saleshead{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: cornflowerblue;
+    width: fit-content;
+    font-family: Arimo;
 }
