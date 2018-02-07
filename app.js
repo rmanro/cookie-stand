@@ -3,6 +3,7 @@
 const hoursOfDay = ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'];
 const totalHourSales = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let totalAllSales = 0;
+let newFoot = false;
 
 function Location (min, max, avg, locationName){
     this.min = min;
@@ -67,6 +68,12 @@ const buildHourHeaders = function(){  //builds hour headers for table
 };
 
 const buildFooter = function(){  //builds total footer for table
+    if (newFoot === true){
+        const footdel = document.querySelector('#footer tr');
+        const containerFoot = footdel.parentNode;
+        containerFoot.removeChild(footdel);
+        console.log('test');
+    };
     const tfoot = document.querySelector('#sales tfoot');
     const tr = document.createElement('tr');
     const totaltd = document.createElement('td');
@@ -111,5 +118,6 @@ form.addEventListener('submit' , function() {
     const newLocation = new Location(min, max, avg, storename);
     newLocation.renderLocation();
     newLocation.buildLocationRow();
-
+    newFoot = true;
+    buildFooter(newFoot);
 });
