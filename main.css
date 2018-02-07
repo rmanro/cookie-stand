@@ -1,10 +1,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(251, 244, 244)
 }
 
 table {
     text-align: center;
     width: 650px;
+    border-collapse: collapse;
+}
+
+th{
+    text-shadow: 1px 1px 1px #666666;
 }
 
 th, td {
@@ -13,12 +19,17 @@ th, td {
     border-width: thin;
 }
 
+tbody {
+    background-color: white;
+}
+
 tbody tr:hover {
     background-color: lightgray;
 }
 
 tfoot {
     background-color: cornflowerblue;
+    font-weight: bold;
 }
 
 thead {
