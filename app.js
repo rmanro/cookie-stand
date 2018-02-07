@@ -41,7 +41,6 @@ Location.prototype.buildLocationRow = function(){   //builds rows for each locat
         td.textContent = this.hourSales[i];
         tr.appendChild(td);
         totalHourSales[i] = totalHourSales[i] + this.hourSales[i];
-        console.log(totalHourSales);
     }
     tbody.appendChild(tr);
     const totaltd = document.createElement('td');
