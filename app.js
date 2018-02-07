@@ -71,6 +71,23 @@ Location.prototype.buildLocationRow = function(){
     tr.appendChild(totaltd);
 };
 
+const buildFooter = function(){
+    const tfoot = document.querySelector('#sales tfoot');
+    const tr = document.createElement('tr');
+    const totaltd = document.createElement('td');
+    totaltd.textContent = 'Totals';
+    tr.appendChild(totaltd);
+    for (let i = 0; i < 15; i++){
+        const td = document.createElement('td');
+        td.textContent = totalHourSales[i];
+        tr.appendChild(td);
+    }
+    tfoot.appendChild(tr);
+    // const totaltd = document.createElement('td');
+    // totaltd.textContent = this.totalSales;
+    // tr.appendChild(totaltd);
+};
+
 buildHourHeaders();
 
 const location1 = new Location('pdxairport', 23, 65, 6.3, 'PDX Airport');
@@ -93,3 +110,4 @@ const location5 = new Location('waterfront', 2, 16, 4.6, 'Waterfront');
 location5.renderLocation();
 location5.buildLocationRow();
 
+buildFooter();
