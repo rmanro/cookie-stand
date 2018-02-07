@@ -4,8 +4,7 @@ const hoursOfDay = ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','
 const totalHourSales = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let totalAllSales = 0;
 
-function Location (id, min, max, avg, locationName){
-    this.id = id;
+function Location (min, max, avg, locationName){
     this.min = min;
     this.max = max;
     this.avg = avg;
@@ -14,11 +13,11 @@ function Location (id, min, max, avg, locationName){
     this.totalSales = 0;
 }
 
-const location1 = new Location('pdxairport', 23, 65, 6.3, 'PDX Airport');
-const location2 = new Location('pioneersquare', 3, 24, 1.2, 'Pioneer Square');
-const location3 = new Location('powells', 11, 38, 3.7, 'Powell\'s');
-const location4 = new Location('stjohns', 20, 38, 2.3, 'St John\'s');
-const location5 = new Location('waterfront', 2, 16, 4.6, 'Waterfront');
+const location1 = new Location(23, 65, 6.3, 'PDX Airport');
+const location2 = new Location(3, 24, 1.2, 'Pioneer Square');
+const location3 = new Location(11, 38, 3.7, 'Powell\'s');
+const location4 = new Location(20, 38, 2.3, 'St John\'s');
+const location5 = new Location(2, 16, 4.6, 'Waterfront');
 
 Location.prototype.renderLocation = function(){
     for (let i = 0; i < 15; i++){            //avg cookies for each hour of workday - 15 total
@@ -100,3 +99,17 @@ const buildTable = function(){
 };
 
 buildTable();
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit' , function() {
+    event.preventDefault();
+    const storename = this.storename.value;
+    const min = this.min.value;
+    const max = this.max.value;
+    const avg = this.avg.value;
+    const newLocation = new Location(min, max, avg, storename);
+    newLocation.renderLocation();
+    newLocation.buildLocationRow();
+
+});
