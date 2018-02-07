@@ -1,3 +1,26 @@
-th {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    text-align: center;
+    width: 650px;
+}
+
+th, td {
+    padding: 4px;
     border-style: solid;
+    border-width: thin;
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+}
+
+tfoot {
+    background-color: cornflowerblue;
+}
+
+thead {
+    background-color: rgb(195, 144, 190)
 }
