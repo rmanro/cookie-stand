@@ -9,10 +9,6 @@ table {
     border-collapse: collapse;
 }
 
-th{
-    text-shadow: 1px 1px 1px #666666;
-}
-
 th, td {
     padding: 4px;
     border-style: solid;
@@ -34,4 +30,37 @@ tfoot {
 
 thead {
     background-color: rgb(195, 144, 190)
+}
+
+fieldset {
+    width: 650px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+legend {
+    background-color: rgb(195, 144, 190);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input {
+    background-color: #f6f0f0;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#add {
+    background-color: cornflowerblue;
+    font-weight: bold;
+    border-width: 2px;
+}
+
+#add:hover {
+    background-color: rgb(195, 144, 190);
 }
