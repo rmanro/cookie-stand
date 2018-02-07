@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Cookies Needed By Location Each Day</h1>
-       <table id="sales">
+       <table id = "sales">
            <thead></thead>
            <tbody></tbody>
            <tfoot></tfoot>
@@ -16,8 +16,19 @@
        <form>
            <fieldset>
                <legend>Add New Location</legend>
-               <label for="storename">Store Name:</label>
-               <input type = "text" name="storename" id="storename"/>
+               <label for = "storename">Store Name:</label>
+               <input type = "text" name = "storename" id = "storename"/>
+               <br>
+               <label for = "min">Minimum # of Expected Customers:</label>
+               <input type = "number" name = "min" id = "min"/>
+               <br>
+               <label for = "max">Maximum # of Expected Customers:</label>
+               <input type = "number" name = "max" id = "max"/>
+               <br>
+               <label for = "avg">Average # of Cookies Purchased per Customer:</label>
+               <input type = "number" name = "avg" id = "avg"/>
+               <br>
+               <input type = "submit" name = "add" value = "Add Location" id = "add">
            </fieldset>
        </form>
     </body>
