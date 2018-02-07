@@ -28,6 +28,7 @@ Location.prototype.renderLocation = function(){
         this.totalSales += this.hourSales[i];
     }
     totalAllSales += this.totalSales;
+    this.buildLocationRow();
 };
 
 Location.prototype.buildLocationRow = function(){   //builds rows for each location
@@ -93,15 +94,10 @@ const buildFooter = function(){  //builds total footer for table
 const buildTable = function(){
     buildHourHeaders();
     location1.renderLocation();
-    location1.buildLocationRow();
     location2.renderLocation();
-    location2.buildLocationRow();
     location3.renderLocation();
-    location3.buildLocationRow();
     location4.renderLocation();
-    location4.buildLocationRow();
     location5.renderLocation();
-    location5.buildLocationRow();
     buildFooter();
 };
 
@@ -117,7 +113,6 @@ form.addEventListener('submit' , function() {
     const avg = this.avg.value;
     const newLocation = new Location(min, max, avg, storename);
     newLocation.renderLocation();
-    newLocation.buildLocationRow();
     newFoot = true;
     buildFooter(newFoot);
 });
