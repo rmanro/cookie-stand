@@ -2,6 +2,7 @@ body {
     background-color: rgba(234, 210, 172, 1);
     width: 960px;
     margin: 0 auto;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #salmonpic {
@@ -40,13 +41,22 @@ h1 {
     background-color: rgba(197, 136, 130, 1);
 }
 
-h3 {
+h2 {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
     letter-spacing: 0.02em;
     color: rgba(209, 222, 222, 1);
-    text-shadow: 2px 2px 3px #111111;
+    text-shadow: 1px 1px 1px #111111;
+    margin-bottom: 5px;
+}
 
+#hours {
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    color: rgba(234, 210, 172, 1);
+    font-weight: bold;
+    /* text-shadow: 1px 1px 0px #111111; */
 }
