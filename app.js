@@ -1,11 +1,11 @@
 'use strict';
 
 const hoursOfDay = ['6AM:','7AM:','8AM:','9AM:','10AM:','11AM:','12PM:','1PM:','2PM:','3PM:','4PM:','5PM:','6PM:','7PM:','8PM:'];
-const totalHourSales = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+const totalHourSales = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
 let totalAllSales = 0;
+let newFoot = false;
 
-function Location (id, min, max, avg, locationName){
-    this.id = id;
+function Location (min, max, avg, locationName){
     this.min = min;
     this.max = max;
     this.avg = avg;
@@ -14,11 +14,11 @@ function Location (id, min, max, avg, locationName){
     this.totalSales = 0;
 }
 
-const location1 = new Location('pdxairport', 23, 65, 6.3, 'PDX Airport');
-const location2 = new Location('pioneersquare', 3, 24, 1.2, 'Pioneer Square');
-const location3 = new Location('powells', 11, 38, 3.7, 'Powell\'s');
-const location4 = new Location('stjohns', 20, 38, 2.3, 'St John\'s');
-const location5 = new Location('waterfront', 2, 16, 4.6, 'Waterfront');
+const location1 = new Location(23, 65, 6.3, 'PDX Airport');
+const location2 = new Location(3, 24, 1.2, 'Pioneer Square');
+const location3 = new Location(11, 38, 3.7, 'Powell\'s');
+const location4 = new Location(20, 38, 2.3, 'St John\'s');
+const location5 = new Location(2, 16, 4.6, 'Waterfront');
 
 Location.prototype.renderLocation = function(){
     for (let i = 0; i < 15; i++){            //avg cookies for each hour of workday - 15 total
@@ -28,6 +28,7 @@ Location.prototype.renderLocation = function(){
         this.totalSales += this.hourSales[i];
     }
     totalAllSales += this.totalSales;
+    this.buildLocationRow();
 };
 
 Location.prototype.buildLocationRow = function(){   //builds rows for each location
@@ -54,7 +55,7 @@ const buildHourHeaders = function(){  //builds hour headers for table
     for (let i = 0; i < 15; i++){
         if (i === 0){
             const blankth = document.createElement('th');
-            blankth.textContent = 'LOCATION';
+            blankth.textContent = 'Location';
             tr.appendChild(blankth);
         }
         const th = document.createElement('th');
@@ -68,6 +69,11 @@ const buildHourHeaders = function(){  //builds hour headers for table
 };
 
 const buildFooter = function(){  //builds total footer for table
+    if (newFoot === true){
+        const footdel = document.querySelector('#footer tr');
+        const containerFoot = footdel.parentNode;
+        containerFoot.removeChild(footdel);
+    };
     const tfoot = document.querySelector('#sales tfoot');
     const tr = document.createElement('tr');
     const totaltd = document.createElement('td');
@@ -87,16 +93,26 @@ const buildFooter = function(){  //builds total footer for table
 const buildTable = function(){
     buildHourHeaders();
     location1.renderLocation();
-    location1.buildLocationRow();
     location2.renderLocation();
-    location2.buildLocationRow();
     location3.renderLocation();
-    location3.buildLocationRow();
     location4.renderLocation();
-    location4.buildLocationRow();
     location5.renderLocation();
-    location5.buildLocationRow();
     buildFooter();
 };
 
 buildTable();
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit' , function() {
+    event.preventDefault();
+    const storename = this.storename.value;
+    const min = this.min.value;
+    const max = this.max.value;
+    const avg = this.avg.value;
+    const newLocation = new Location(min, max, avg, storename);
+    newLocation.renderLocation();
+    newFoot = true;
+    buildFooter(newFoot);
+    form.reset();
+});

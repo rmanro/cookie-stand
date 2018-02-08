@@ -1,16 +1,26 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arimo', sans-serif;
+    background-color: #e5dada;
 }
 
 table {
     text-align: center;
-    width: 650px;
+    width: fit-content;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: lighter;
 }
 
 th, td {
-    padding: 4px;
     border-style: solid;
     border-width: thin;
+    padding: 5px;
+}
+
+tbody {
+    background-color: white;
 }
 
 tbody tr:hover {
@@ -18,9 +28,68 @@ tbody tr:hover {
 }
 
 tfoot {
-    background-color: cornflowerblue;
+    background-color: rgb(151, 185, 247);
+    font-weight: bold;
 }
 
 thead {
-    background-color: rgb(195, 144, 190)
+    background-color: rgb(195, 144, 190);
+}
+
+fieldset {
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    font-weight: lighter;
+}
+
+legend {
+    background-color: rgb(195, 144, 190);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: right;
+}
+
+input {
+    background-color: #f6f0f0;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#add {
+    background-color: cornflowerblue;
+    border-width: 1px;
+    font-size: 105%;
+    margin-top: 3px;
+    font-weight: 300;
+
+}
+
+#add:hover {
+    background-color: rgb(151, 185, 247);
+    font-weight: 400;
+
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+#saleshead{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: cornflowerblue;
+    width: fit-content;
+    font-family: Arimo;
+    font-weight: lighter;
+}
+
+.input {
+    margin-left: 4px;
 }
