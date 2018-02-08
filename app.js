@@ -21,7 +21,7 @@ const location4 = new Location(20, 38, 2.3, 'St John\'s');
 const location5 = new Location(2, 16, 4.6, 'Waterfront');
 
 Location.prototype.renderLocation = function(){
-    for (let i = 0; i < 15; i++){            //avg cookies for each hour of workday - 15 total
+    for (let i = 0; i < hoursOfDay.length; i++){            //avg cookies for each hour of workday - 15 total
         const custPerHour = Math.floor(Math.random () * (this.max - this.min + 1)) + this.min;    //random # of customers
         const cookiesPerHour = Math.floor(this.avg * custPerHour);      //avg cookies per hour
         this.hourSales[i] = cookiesPerHour;
@@ -37,7 +37,7 @@ Location.prototype.buildLocationRow = function(){   //builds rows for each locat
     const loctd = document.createElement('td');
     loctd.textContent = this.locationName;
     tr.appendChild(loctd);
-    for (let i = 0; i < 15; i++){
+    for (let i = 0; i < hoursOfDay.length; i++){
         const td = document.createElement('td');
         td.textContent = this.hourSales[i];
         tr.appendChild(td);
@@ -52,7 +52,7 @@ Location.prototype.buildLocationRow = function(){   //builds rows for each locat
 const buildHourHeaders = function(){  //builds hour headers for table
     const theader = document.querySelector('#sales thead');
     const tr = document.createElement('tr');
-    for (let i = 0; i < 15; i++){
+    for (let i = 0; i < hoursOfDay.length; i++){
         if (i === 0){
             const blankth = document.createElement('th');
             blankth.textContent = 'Location';
