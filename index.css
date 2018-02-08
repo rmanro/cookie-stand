@@ -9,21 +9,23 @@ body {
     height: 123px;
     position: absolute;
     top: 4px;
-    left: 10px;
+    left: 60px;
 }
 
 #chinookpic {
     width: 393.5px;
     height: 123px;
     position: absolute;
-    top: 4px;
-    left: 545px;
+    top: 7px;
+    left: 500px;
 }
 
 h1 {
     font-family: 'BioRhyme Expanded', serif;
     position: absolute;
-    top: 110px;
-    left: 65px;
+    top: 115px;
+    left: 60px;
     letter-spacing: 0.23em;
+    color: rgba(223, 146, 142, 1);
+    text-shadow: 2px 2px 3px #111111;
 }
