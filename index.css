@@ -24,8 +24,29 @@ h1 {
     font-family: 'BioRhyme Expanded', serif;
     position: absolute;
     top: 115px;
-    left: 60px;
+    left: 57px;
     letter-spacing: 0.23em;
     color: rgba(223, 146, 142, 1);
     text-shadow: 2px 2px 3px #111111;
+}
+
+#locations {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 370px;
+    position: absolute;
+    top: 210px;
+    left: 57px;
+    background-color: rgba(197, 136, 130, 1);
+}
+
+h3 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 0.02em;
+    color: rgba(209, 222, 222, 1);
+    text-shadow: 2px 2px 3px #111111;
+
 }
