@@ -5,14 +5,18 @@ body {
 
 table {
     text-align: center;
-    width: 650px;
+    width: fit-content;
     border-collapse: collapse;
 }
 
+th {
+    font-weight: lighter;
+}
+
 th, td {
-    padding: 4px;
     border-style: solid;
     border-width: thin;
+    padding: 5px;
 }
 
 tbody {
@@ -24,7 +28,7 @@ tbody tr:hover {
 }
 
 tfoot {
-    background-color: cornflowerblue;
+    background-color: rgb(151, 185, 247);
     font-weight: bold;
 }
 
@@ -38,7 +42,7 @@ fieldset {
     border-radius: 10px;
     padding: 20px;
     background-color: white;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 legend {
@@ -61,10 +65,15 @@ input {
     background-color: cornflowerblue;
     border-width: 1px;
     font-size: 105%;
+    margin-top: 3px;
+    font-weight: 300;
+
 }
 
 #add:hover {
-    background-color: rgb(195, 144, 190);
+    background-color: rgb(151, 185, 247);
+    font-weight: 400;
+
 }
 
 input[type="number"] {
@@ -78,4 +87,9 @@ input[type="number"] {
     background-color: cornflowerblue;
     width: fit-content;
     font-family: Arimo;
+    font-weight: lighter;
+}
+
+.input {
+    margin-left: 4px;
 }
