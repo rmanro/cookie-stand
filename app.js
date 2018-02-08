@@ -111,7 +111,6 @@ form.addEventListener('submit' , function() {
     const max = this.max.value;
     const avg = this.avg.value;
     const newLocation = new Location(min, max, avg, storename);
-    console.log(newLocation);
     newLocation.renderLocation();
     newFoot = true;
     buildFooter(newFoot);
