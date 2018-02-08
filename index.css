@@ -1,0 +1,29 @@
+body {
+    background-color: rgba(234, 210, 172, 1);
+    width: 960px;
+    margin: 0 auto;
+}
+
+#salmonpic {
+    width: 393.5px;
+    height: 123px;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+#chinookpic {
+    width: 393.5px;
+    height: 123px;
+    position: absolute;
+    top: 4px;
+    left: 545px;
+}
+
+h1 {
+    font-family: 'BioRhyme Expanded', serif;
+    position: absolute;
+    top: 110px;
+    left: 65px;
+    letter-spacing: 0.23em;
+}
