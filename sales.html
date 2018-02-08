@@ -20,13 +20,13 @@
                <input type = "text" name = "storename" id = "storename" required = "required" class = "input">
                <br>
                <label for = "min">Minimum # of Expected Customers:</label>
-               <input type = "number" name = "min" id = "min" required = "required" class = "input"/>
+               <input type = "number" name = "min" id = "min" required = "required" class = "input" min = "1"/>
                <br>
                <label for = "max">Maximum # of Expected Customers:</label>
-               <input type = "number" name = "max" id = "max" required = "required" class = "input"/>
+               <input type = "number" name = "max" id = "max" required = "required" class = "input" min = "1"/>
                <br>
                <label for = "avg">Average # of Cookies Purchased per Customer:</label>
-               <input type = "number" name = "avg" id = "avg" required = "required" class = "input"/>
+               <input type = "number" name = "avg" id = "avg" required = "required" class = "input" step = "any" min = "1"/>
                <br>
                <input type = "submit" name = "add" value = "Add Location" id = "add">
            </fieldset>
