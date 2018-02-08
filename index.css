@@ -39,6 +39,8 @@ h1 {
     top: 210px;
     left: 57px;
     background-color: rgba(197, 136, 130, 1);
+    padding-top: 3px;
+    padding-bottom: 9px;
 }
 
 h2 {
@@ -71,4 +73,5 @@ h2 {
 
 .locations p {
     margin-top: 2px;
+    margin-bottom: 0px;
 }
