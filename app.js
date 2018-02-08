@@ -22,7 +22,7 @@ const location5 = new Location(2, 16, 4.6, 'Waterfront');
 
 Location.prototype.renderLocation = function(){
     for (let i = 0; i < 15; i++){            //avg cookies for each hour of workday - 15 total
-        const custPerHour = Math.floor(Math.random () * (this.max - this.min) + this.min);    //random # of customers
+        const custPerHour = Math.floor(Math.random () * (this.max - this.min + 1)) + this.min;    //random # of customers
         const cookiesPerHour = Math.floor(this.avg * custPerHour);      //avg cookies per hour
         this.hourSales[i] = cookiesPerHour;
         this.totalSales += this.hourSales[i];
@@ -111,6 +111,7 @@ form.addEventListener('submit' , function() {
     const max = this.max.value;
     const avg = this.avg.value;
     const newLocation = new Location(min, max, avg, storename);
+    console.log(newLocation);
     newLocation.renderLocation();
     newFoot = true;
     buildFooter(newFoot);
