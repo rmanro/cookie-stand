@@ -98,3 +98,14 @@ h2 {
     padding-top: 3px;
     padding-bottom: 9px;
 }
+
+#events {
+    border-radius: 5px;
+    width: 430px;
+    position: absolute;
+    top: 425px;
+    left: 450px;
+    background-color: rgba(197, 136, 130, .95);
+    padding-top: 3px;
+    padding-bottom: 9px;
+}
