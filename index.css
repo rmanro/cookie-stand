@@ -1,8 +1,19 @@
 body {
-    background-color: rgba(234, 210, 172, 1);
     width: 960px;
     margin: 0 auto;
     font-family: 'Libre Baskerville', serif;
+    color: rgba(234, 210, 172, 1);
+    text-shadow: -1px 0px 3px #111111;
+    background:
+        url(fishgrey.png)
+        no-repeat 100px 250px,
+        url(fishgrey.png)
+        no-repeat 100px 400px,
+        url(fishgrey.png)
+        no-repeat 525px 250px,
+        url(fishgrey.png)
+        no-repeat 525px 400px;
+    background-color: rgba(234, 210, 172, 1);
 }
 
 #salmonpic {
@@ -32,13 +43,23 @@ h1 {
 }
 
 #locations {
-    border: 3px solid black;
     border-radius: 5px;
     width: 370px;
     position: absolute;
     top: 210px;
     left: 57px;
-    background-color: rgba(197, 136, 130, 1);
+    background-color: rgba(197, 136, 130, .94);
+    padding-top: 3px;
+    padding-bottom: 9px;
+}
+
+#aboutus{
+    border-radius: 5px;
+    width: 430px;
+    position: absolute;
+    top: 210px;
+    left: 450px;
+    background-color: rgba(197, 136, 130, .95);
     padding-top: 3px;
     padding-bottom: 9px;
 }
@@ -58,8 +79,9 @@ h2 {
     position: relative;
     text-align: center;
     margin-top: 0px;
-    color: rgba(234, 210, 172, 1);
+    color: #1D201F;
     font-weight: bold;
+    text-shadow: none;
 }
 
 .locations h3, p{
