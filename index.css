@@ -2,18 +2,8 @@ body {
     width: 960px;
     margin: 0 auto;
     font-family: 'Libre Baskerville', serif;
-    color: rgba(234, 210, 172, 1);
-    text-shadow: -1px 0px 3px #111111;
-    background:
-        url(fishgrey.png)
-        no-repeat 100px 250px,
-        url(fishgrey.png)
-        no-repeat 100px 400px,
-        url(fishgrey.png)
-        no-repeat 525px 250px,
-        url(fishgrey.png)
-        no-repeat 525px 400px;
-    background-color: rgba(234, 210, 172, 1);
+    color: #1D201F;
+    background-color: #D1DEDE;
 }
 
 #salmonpic {
@@ -39,7 +29,7 @@ h1 {
     left: 57px;
     letter-spacing: 0.23em;
     color: rgba(223, 146, 142, 1);
-    text-shadow: 2px 2px 3px #111111;
+    text-shadow: 2px 2px 1px #111111;
 }
 
 #locations {
