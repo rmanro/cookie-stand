@@ -147,4 +147,20 @@ a:visited {
 
 }
 
+#cookie {
+    position: absolute;
+    top: 275px;
+    left: 340px;
+}
+
+#visitus {
+    color: #EAD2AC;
+    position: absolute;
+    top: 200px;
+    left: 57px;
+    letter-spacing: .32em;
+    text-shadow: .5px 2px 1px #111111;
+    font-family: 'Libre Baskerville', serif;
+
+}
 
