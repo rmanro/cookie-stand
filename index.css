@@ -109,37 +109,24 @@ h2 {
     background-color: rgba(197, 136, 130, .95);
     padding-top: 3px;
     padding-bottom: 9px;
+    z-index: 3;
 }
 
 #fishbunch {
     position: absolute;
     top: 475px;
     left: 630px;
-    filter: opacity(50%);
+    filter: opacity(45%);
     z-index: 1;
 }
 
 #fishbunch2 {
     position: absolute;
-    top: 475px;
+    top: 465px;
     left: 400px;
-    filter: opacity(50%);
+    filter: opacity(45%);
     z-index: 2;
 
 }
 
-#fishbunch3 {
-    position: absolute;
-    top: 275px;
-    left: 20px;
-    filter: opacity(50%);
-    z-index: 2;
-}
 
-#fishbunch4 {
-    position: absolute;
-    top: 475px;
-    left: -15px;
-    filter: opacity(50%);
-    z-index: 2;
-}
