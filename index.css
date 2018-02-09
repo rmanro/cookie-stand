@@ -104,17 +104,6 @@ h2 {
     padding-bottom: 9px;
 }
 
-/* #menuscroll {
-    position: fixed;
-    right: 15px;
-    bottom: 0px;
-    border: 1pt solid black;
-    padding: 2px;
-} */
-
-
-
-
 a:link {
     text-decoration: none;
     color: rgba(209, 222, 222, 1);
@@ -226,3 +215,20 @@ a:hover {
     border-radius: 5px;
 }
 
+#eventsheader {
+    letter-spacing: 3.7em
+}
+
+#family {
+    width: 50%;
+    position: absolute;
+    top: 240px;
+    left: 220px;
+    border: 2pt solid black;
+}
+
+#eventpara {
+    position: absolute;
+    top: 540px;
+    left: 70px;
+}
