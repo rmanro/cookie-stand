@@ -104,8 +104,23 @@ h2 {
     padding-bottom: 9px;
 }
 
+/* #menuscroll {
+    position: fixed;
+    right: 15px;
+    bottom: 0px;
+    border: 1pt solid black;
+    padding: 2px;
+} */
+
+
+
+
 a:link {
     text-decoration: none;
+    color: rgba(209, 222, 222, 1);
+}
+
+a:visited {
     color: rgba(209, 222, 222, 1);
 }
 
@@ -114,9 +129,7 @@ a:hover {
     cursor: pointer;
 }
 
-a:visited {
-    color: rgba(209, 222, 222, 1);
-}
+
 
 #events {
     border-radius: 5px;
@@ -202,3 +215,14 @@ a:visited {
     top: 1360px;
     left: 380px;
 }
+
+#menuscroll {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    border: 1pt solid black;
+    padding: 2px;
+    background-color: rgba(223, 146, 142, 1);
+    border-radius: 5px;
+}
+
