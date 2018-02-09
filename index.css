@@ -100,7 +100,6 @@ h2 {
     padding-bottom: 9px;
 }
 
-
 a:link {
     text-decoration: none;
     color: rgba(209, 222, 222, 1);
@@ -109,6 +108,10 @@ a:link {
 a:hover {
     color: #EAD2AC;
     cursor: pointer;
+}
+
+a:visited {
+    color: rgba(209, 222, 222, 1);
 }
 
 #events {
