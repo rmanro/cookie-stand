@@ -100,6 +100,11 @@ h2 {
     padding-bottom: 9px;
 }
 
+.colorchangers:hover {
+    color: #EAD2AC;
+    cursor: pointer;
+}
+
 #events {
     border-radius: 5px;
     width: 430px;
