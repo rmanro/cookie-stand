@@ -1,0 +1,234 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Libre Baskerville', serif;
+    color: #1D201F;
+    background-color: #D1DEDE;
+}
+
+#salmonpic {
+    width: 393.5px;
+    height: 123px;
+    position: absolute;
+    top: 4px;
+    left: 60px;
+}
+
+#chinookpic {
+    width: 393.5px;
+    height: 123px;
+    position: absolute;
+    top: 7px;
+    left: 500px;
+}
+
+h1 {
+    font-family: 'BioRhyme Expanded', serif;
+    position: absolute;
+    top: 115px;
+    left: 57px;
+    letter-spacing: 0.23em;
+    color: rgba(223, 146, 142, 1);
+    text-shadow: 2px 2px 1px #111111;
+}
+
+#merchHeader {
+    letter-spacing: 1.2em;
+}
+
+#locations {
+    border-radius: 5px;
+    width: 370px;
+    position: absolute;
+    top: 210px;
+    left: 57px;
+    background-color: rgba(197, 136, 130, 1);
+    padding-top: 3px;
+    padding-bottom: 9px;
+    z-index: 3;
+}
+
+#aboutus{
+    border-radius: 5px;
+    width: 430px;
+    position: absolute;
+    top: 210px;
+    left: 450px;
+    background-color: rgba(197, 136, 130, .95);
+    padding-top: 3px;
+    padding-bottom: 9px;
+}
+
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 0.02em;
+    color: rgba(209, 222, 222, 1);
+    text-shadow: 1px 1px 1px #111111;
+    margin-bottom: 5px;
+}
+
+#hours {
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    color: #1D201F;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.locations h3, p{
+    position: relative;
+    text-align: center;
+}
+
+.locations h3 {
+    margin-bottom: 0px;
+}
+
+.locations p {
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+#merchandise {
+    border-radius: 5px;
+    width: 430px;
+    position: absolute;
+    top: 360px;
+    left: 450px;
+    background-color: rgba(197, 136, 130, .95);
+    padding-top: 3px;
+    padding-bottom: 9px;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgba(209, 222, 222, 1);
+}
+
+a:visited {
+    color: rgba(209, 222, 222, 1);
+}
+
+a:hover {
+    color: #EAD2AC;
+    cursor: pointer;
+}
+
+
+
+#events {
+    border-radius: 5px;
+    width: 430px;
+    position: absolute;
+    top: 425px;
+    left: 450px;
+    background-color: rgba(197, 136, 130, .95);
+    padding-top: 3px;
+    padding-bottom: 9px;
+    z-index: 3;
+}
+
+#fishbunch {
+    position: absolute;
+    top: 475px;
+    left: 630px;
+    filter: opacity(45%);
+    z-index: 1;
+}
+
+#fishbunch2 {
+    position: absolute;
+    top: 465px;
+    left: 400px;
+    filter: opacity(45%);
+    z-index: 2;
+
+}
+
+#cookie {
+    position: absolute;
+    top: 275px;
+    left: 340px;
+}
+
+#visitus {
+    color: #EAD2AC;
+    position: absolute;
+    top: 200px;
+    left: 57px;
+    letter-spacing: .32em;
+    text-shadow: .5px 2px 1px #111111;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#cookieprice {
+    top: 420px;
+    left: 340px;
+    position: absolute;
+}
+
+#shirt {
+    position: absolute;
+    top: 620px;
+    left: 315px;
+    z-index: 2;
+}
+
+#sidefish {
+    position: absolute;
+    top: 656px;
+    left: 289px;
+    z-index: 1;
+    transform: rotate(90deg);
+    height: 155px;
+}
+
+#shirtprice {
+    top: 950px;
+    position: absolute;
+    left: 383px;
+}
+
+#cutter {
+    position: absolute;
+    top: 1060px;
+    left: 325px;
+}
+
+#cutterprice {
+    position: absolute;
+    top: 1360px;
+    left: 380px;
+}
+
+#menuscroll {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    border: 1pt solid black;
+    padding: 2px;
+    background-color: rgba(223, 146, 142, 1);
+    border-radius: 5px;
+}
+
+#eventsheader {
+    letter-spacing: 3.7em
+}
+
+#family {
+    width: 50%;
+    position: absolute;
+    top: 240px;
+    left: 220px;
+    border: 2pt solid black;
+}
+
+#eventpara {
+    position: absolute;
+    top: 540px;
+    left: 70px;
+}

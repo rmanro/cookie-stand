@@ -1,6 +1,6 @@
 body {
-    font-family: 'Arimo', sans-serif;
-    background-color: #e5dada;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #D1DEDE;
 }
 
 table {
@@ -28,12 +28,12 @@ tbody tr:hover {
 }
 
 tfoot {
-    background-color: rgb(151, 185, 247);
+    background-color: #EAD2AC;
     font-weight: bold;
 }
 
 thead {
-    background-color: rgb(195, 144, 190);
+    background-color: #DF928E;
 }
 
 fieldset {
@@ -46,7 +46,7 @@ fieldset {
 }
 
 legend {
-    background-color: rgb(195, 144, 190);
+    background-color: #DF928E;
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
@@ -92,4 +92,28 @@ input[type="number"] {
 
 .input {
     margin-left: 4px;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgba(209, 222, 222, 1);
+}
+
+a:visited {
+    color: rgba(209, 222, 222, 1);
+}
+
+a:hover {
+    color: #EAD2AC;
+    cursor: pointer;
+}
+
+#menuscroll {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    border: 1pt solid black;
+    padding: 2px;
+    background-color: rgba(223, 146, 142, 1);
+    border-radius: 5px;
 }
