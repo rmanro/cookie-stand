@@ -190,3 +190,15 @@ a:visited {
     position: absolute;
     left: 383px;
 }
+
+#cutter {
+    position: absolute;
+    top: 1060px;
+    left: 325px;
+}
+
+#cutterprice {
+    position: absolute;
+    top: 1360px;
+    left: 380px;
+}
